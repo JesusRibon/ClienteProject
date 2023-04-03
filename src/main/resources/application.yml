@@ -7,6 +7,8 @@ spring:
 ---
 spring:
   profile: local
+  main:
+    allow-bean-definition-overriding: true
   datasource:
     url: jdbc:postgresql://localhost:5432/cliente1
     username: postgres
@@ -18,9 +20,3 @@ spring:
     hibernate:
       format-sql: true
       ddl-auto: none
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
-
